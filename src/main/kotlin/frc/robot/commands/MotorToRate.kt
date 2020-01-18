@@ -24,7 +24,7 @@ class MotorToRate(val targetRate: Double, val m_subsystem: MotorSubsystem) : Com
   init {
     addRequirements(m_subsystem)
 
-    pidController = PIDController(0.0000125 * 0.45, 0.0000125 * 0.84, 0.000000175)
+    pidController = PIDController(0.0000125 * 0.45, 0.0000125 * 0.94, 0.000000175)
     // pidController = PIDController(0.000009, 0.0009, 0.000000035)
   }
 

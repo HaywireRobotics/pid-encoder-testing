@@ -60,7 +60,7 @@ class RobotContainer {
   fun configureButtonBindings() {
     val manipJoyBut3: JoystickButton = JoystickButton(manipulatorJoystick, 3)
 
-    manipJoyBut3.whileHeld(MotorToRate(150000.0, motorSubsystem))
+    manipJoyBut3.whileHeld(MotorToRate(250000.0, motorSubsystem))
   }
 
   fun getAutonomousCommand(): Command {
