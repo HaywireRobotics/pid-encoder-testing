@@ -45,7 +45,8 @@ class MotorToRate(val targetRate: Double, val m_subsystem: MotorSubsystem) : Com
   override fun isFinished(): Boolean = false
 
   fun useOutput(output: Double) {
-    m_subsystem.set(-maxOf(output, 0.1))
+    //m_subsystem.set(-maxOf(output, 0.005)-0.1)
+    m_subsystem.set(-output - 0.5)
     // println(output)
   }
 

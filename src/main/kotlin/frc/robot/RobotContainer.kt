@@ -60,7 +60,8 @@ class RobotContainer {
   fun configureButtonBindings() {
     val manipJoyBut3: JoystickButton = JoystickButton(manipulatorJoystick, 3)
 
-    manipJoyBut3.whileHeld(MotorToRate(250000.0, motorSubsystem))
+    manipJoyBut3.whileHeld(MotorToRate(100000.0, motorSubsystem))
+    //10000 => 145 rpm
   }
 
   fun getAutonomousCommand(): Command {
